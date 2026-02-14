@@ -1,0 +1,8 @@
+{
+  "name": "esp32-ota-api",
+  "version": "1.0.0",
+  "main": "api/check-update.js",
+  "dependencies": {
+    "@vercel/node": "latest"
+  }
+}
