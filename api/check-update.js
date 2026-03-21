@@ -4,9 +4,9 @@ export default async function handler(req, res) {
     const currentVersion = req.query.ver;
 
     // 2. CONFIGURATION: Manually update these 3 lines for every new release
-    const LATEST_VERSION = "2.2.3"; 
+    const LATEST_VERSION = "2.2.2"; 
     const S3_BASE_URL = "https://esp32--firmware.s3.amazonaws.com"; 
-    const BIN_FILE = "sensor_test_fail_.ino.esp32.bin";
+    const BIN_FILE = "sketch_feb16b_working.ino.esp32.bin";
 
     if (!currentVersion) {
         return res.status(400).json({ error: "Missing version query parameter" });
